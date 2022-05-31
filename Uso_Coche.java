@@ -19,5 +19,10 @@ public class Uso_Coche {
         System.out.println(car1.dime_peso_coche());
 
         System.out.println("El final de coche es: "+ car1.precio_coche());
+
+        System.out.println("\n");
+        System.out.println(car1);
     }
+
+
 }

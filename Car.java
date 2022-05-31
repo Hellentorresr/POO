@@ -47,30 +47,30 @@ public class Car{
     }
 
     public String dime_asientos(){ //GETTER
-       if (asientos_cuero == true){
+       if (asientos_cuero){
            return "El coche tiene asientos de cuero";
        }else {
            return "El coche no tiene asientos de cuero";
        }
     }
 
-    public void config_climatizador(String pClimatizador){ //setter
-        if(pClimatizador == "si"){
-            climatizador = true;
+    public void config_climatizador(String climatizador){ //setter
+        if (climatizador == "si"){
+            this.climatizador = true;
         }else {
-            climatizador = false;
+            this.climatizador= false;
         }
     }
 
     public String dime_climatizador(){ // getter
-       if (climatizador == true){
+       if (climatizador){
            return "El coche incorpora climatizador";
        }else {
            return "El coche no incorpora climatizador";
        }
     }
 
-    public String dime_peso_coche(){ //setter and getter no a good practice
+    public String dime_peso_coche(){ //setter and getter not a good practice
       int pesoCarrocería =500;
       peso_total = peso_plataforma+pesoCarrocería;
 
@@ -94,6 +94,21 @@ public class Car{
            precioFinal += 1500;
        }
        return precioFinal;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "rueda=" + rueda +
+                ", largo=" + largo +
+                ", ancho=" + ancho +
+                ", motor=" + motor +
+                ", peso_plataforma=" + peso_plataforma +
+                ", color='" + color + '\'' +
+                ", peso_total=" + peso_total +
+                ", asientos_cuero=" + asientos_cuero +
+                ", climatizador=" + climatizador +
+                '}';
     }
 }
 
