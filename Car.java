@@ -1,10 +1,10 @@
 
 public class Car{
-   private int rueda;
-    private int largo;
-   private int ancho;
-    private int motor;
-    private int peso_plataforma;
+   private final int rueda;
+    private final int largo;
+   private final int ancho;
+    private final int motor;
+    private final int peso_plataforma;
    private String color;
    private int peso_total;
    private boolean asientos_cuero, climatizador;
@@ -23,7 +23,7 @@ public class Car{
     //para esto se usa tipo de dato String
     public String dime_Datos_Generales(){ //GETTER
         return "\nLa plataforma del vehiculo tiene: "+rueda +" ruedas" + ". Mide "+ largo/1000 + " Metros con un ancho de " +
-                + ancho  + " Centimetres y un peso de Plataforma de: "+ peso_plataforma +
+                 ancho  + " Centimetres y un peso de Plataforma de: "+ peso_plataforma +
                 " Kilos.";
     }
 
@@ -63,7 +63,7 @@ public class Car{
     }
 
     public String dime_peso_coche(){ //setter and getter not a good practice
-      int pesoCarrocería =500;
+      int pesoCarrocería = 500;
       peso_total = peso_plataforma+pesoCarrocería;
 
       if (asientos_cuero){
