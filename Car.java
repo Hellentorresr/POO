@@ -39,11 +39,7 @@ public class Car{
 
     //method getter and setter asientos de cuero
     public void configura_asientos(String pAsientos_Cuero){ //setter
-       if(pAsientos_Cuero == "si"){
-           asientos_cuero = true;
-       }else {
-           asientos_cuero = false;
-       }
+       this.asientos_cuero = pAsientos_Cuero.equalsIgnoreCase("si");
     }
 
     public String dime_asientos(){ //GETTER
@@ -55,11 +51,7 @@ public class Car{
     }
 
     public void config_climatizador(String climatizador){ //setter
-        if (climatizador == "si"){
-            this.climatizador = true;
-        }else {
-            this.climatizador= false;
-        }
+        this.climatizador = climatizador.equalsIgnoreCase("si");
     }
 
     public String dime_climatizador(){ // getter
@@ -74,10 +66,10 @@ public class Car{
       int pesoCarrocería =500;
       peso_total = peso_plataforma+pesoCarrocería;
 
-      if (asientos_cuero == true){
+      if (asientos_cuero){
           peso_total+= 50;
       }
-      if(climatizador == true){
+      if(climatizador){
           peso_total+= 20;
       }
       return "El peso del coche es: "+peso_total;
@@ -86,11 +78,11 @@ public class Car{
     public int precio_coche(){ //getter
        int precioFinal= 10000;
 
-       if (asientos_cuero == true){
+       if (asientos_cuero){
            precioFinal+= 2000;
        }
 
-       if (climatizador == true){
+       if (climatizador){
            precioFinal += 1500;
        }
        return precioFinal;

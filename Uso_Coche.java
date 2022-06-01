@@ -1,3 +1,4 @@
+import javax.swing.*;
 public class Uso_Coche {
 
     public static void main(String[] args) {
@@ -7,13 +8,13 @@ public class Uso_Coche {
         //System.out.println("Este carro tiene: "+car1.rueda+ " Ruedas");//con el modifier prívate no se puede hacer esto
 
         System.out.println(car1.dime_Datos_Generales());
-        car1.estable_color("Negro");
+        car1.estable_color(JOptionPane.showInputDialog("Introduce el color del vehiculo: "));
         System.out.println(car1.dimeColor());
 
-        car1.configura_asientos("no");
+        car1.configura_asientos(JOptionPane.showInputDialog("El vehiculo tiene asientos de cuero?: "));
         System.out.println(car1.dime_asientos());
 
-        car1.config_climatizador("si");
+        car1.config_climatizador(JOptionPane.showInputDialog("Tiene climatizador?: "));
         System.out.println(car1.dime_climatizador());
 
         System.out.println(car1.dime_peso_coche());
