@@ -11,12 +11,14 @@ public class Empleado {
     private Date altaContrato; // tipo de dato Date tipo objeto
     private int year;
     private  int mes;
-    private int dia;
+    private int day;
 
     //Constructor
-    public Empleado(String nom, double sueldo, int year, int mes, int dia){ //con los tres últimos calcular el dia de alta
+    public Empleado(String nom, double sueldo, int year, int mes, int day){ //con los tres últimos calcular el dia de alta
         this.nom = nom;
         this.sueldo = sueldo;
-        //GregorianCalendar()
+        GregorianCalendar calendar = new GregorianCalendar(year, mes-1, day);
+        //para que el objeto me devuelva la fecha usamos el method
+        altaContrato = calendar.getTime();
     }
 }
