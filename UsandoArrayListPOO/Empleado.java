@@ -1,9 +1,9 @@
 package UsandoArrayListPOO;
 
 public class Empleado {
-    private String name;
-    private int age;
-    private float salary;
+    private final String name;
+    private final int age;
+    private final float salary;
 
     public Empleado(String name, int age, float salary){
         this.name = name;
@@ -16,6 +16,4 @@ public class Empleado {
                 +"The Age is: "+age+"\n"
                 +"The salary is: "+salary;
   }
-
-
 }

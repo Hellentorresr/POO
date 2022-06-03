@@ -23,7 +23,5 @@ public class Uso_Empleado {
                     """);
            System.out.println(i.getData());
         }
-
-
     }
 }
