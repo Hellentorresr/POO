@@ -25,7 +25,7 @@ public class Uso_Empleado {
         misEmpleados[0] = new Empleado("Meghan",10000,2015,6,1);
         misEmpleados[1] = new Empleado("Miguel",800,2020,12,15);
         misEmpleados[2] = new Empleado("Hellen",85000,2020,1,10);
-
+        misEmpleados[3] = new Empleado( "chepe", 55000, 2022, 2, 12);
         for (Empleado i: misEmpleados) {
             //usando un metodo de la clase Empleado
             i.subeSueldo(5);//sube sueldo a los tres
