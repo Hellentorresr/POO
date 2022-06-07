@@ -2,15 +2,21 @@ package Empleado;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
-
+/*
+@ Autor: Hellen Torres
+@Version 1
+@Date: 7/06/2022
+ */
 public class Empleado {
     // variable de clases atributos
     private final String nom;
-    private final Date altaContrato; // tipo de dato Date tipo objeto
+    private  Date altaContrato; // tipo de dato Date tipo objeto
     private double sueldo;
 
 
-    //Constructor
+    /*
+    Primer Constructor
+     */
     public Empleado(String nom, double sueldo, int year, int mes, int day) { //con los tres últimos calcular el dia de alta
         this.nom = nom;
         this.sueldo = sueldo;
@@ -19,6 +25,13 @@ public class Empleado {
         altaContrato = calendar.getTime();
     }
 
+    /*
+    Segundo constructor, este lo usaremos cuando no sabemos el sueldo ni la fecha de alta
+     */
+    public Empleado(String nom){
+        this(nom, 6000, 2022,1,13);
+
+    }
     public String getName() { //getter
         return nom;
     }
@@ -44,5 +57,6 @@ public class Empleado {
                 ", Sueldo = " + sueldo +
                 ", Fecha de alta = " + altaContrato +
                 '}';
+
     }
 }
