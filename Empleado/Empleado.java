@@ -57,6 +57,5 @@ public class Empleado {
                 ", Sueldo = " + sueldo +
                 ", Fecha de alta = " + altaContrato +
                 '}';
-
     }
 }

@@ -1,3 +1,4 @@
+package carro;
 
 public class Car{
    private final int rueda;
@@ -34,7 +35,7 @@ public class Car{
 
     //getter para saber el color
     public String dimeColor(){
-        return "El color del coche es: "+color;
+        return "\nEl color del coche es: "+color;
     }
 
     //method getter and setter asientos de cuero
@@ -90,7 +91,7 @@ public class Car{
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "carro.Car{" +
                 "rueda=" + rueda +
                 ", largo=" + largo +
                 ", ancho=" + ancho +
