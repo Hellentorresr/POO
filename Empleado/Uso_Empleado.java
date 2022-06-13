@@ -1,4 +1,7 @@
 package Empleado;
+
+import javax.swing.*;
+
 public class Uso_Empleado {
     public static void main(String[] args) {
         // array
@@ -12,7 +15,6 @@ public class Uso_Empleado {
         misEmpleados[2] = new Empleado("Hellen", 85000, 2020, 1, 10);
         misEmpleados[3] = new Empleado("Jose", 55000, 2022, 2, 12);
         misEmpleados[4] = new Empleado("Antonio Fernandez");
-
 
         /*
          *  usamos esta estructura de control forEach para recorrer
@@ -31,6 +33,5 @@ public class Uso_Empleado {
             System.out.println(i);
             System.out.println("---------------");
         }
-
     }
 }
